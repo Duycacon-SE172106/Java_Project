@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login CellphoneS</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; }
+            .login-container { width: 100%; max-width: 400px; margin: 60px auto; padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+            .login-header { text-align: center; margin-bottom: 24px; }
+            .login-header h1 { font-size: 24px; color: #333; }
+            .login-form { display: flex; flex-direction: column; }
+            .login-form input { margin-bottom: 16px; padding: 10px; border: 1px solid #ccd0d5; border-radius: 6px; }
+            .login-form button { padding: 10px; border: none; border-radius: 6px; background-color: #1877f2; color: white; font-size: 16px; cursor: pointer; }
+            .login-form button:hover { background-color: #165eab; }
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Mobile Shop</h1>
+            </div>
+            <form action="MainController" method="POST" class="login-form">
+                User name<input type="text" name="userID"/></br>
+                Password<input type="password" name="password"/></br>
+                <input type="submit" name="action" value="Login"/>
+                <input type="reset" value="Reset"/>
+            </form>
+        </div>
+    </body>
+</html>
